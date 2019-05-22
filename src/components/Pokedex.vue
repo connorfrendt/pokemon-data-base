@@ -1,12 +1,15 @@
 <template>
     <div>
         <h1 id='poke-page'>POKEDEX PAGE</h1>
-        <Pokemon />
+        <ul>
+            <Pokemon 
+
+            />
+        </ul>
     </div>
 </template>
 
 <script>
-
 import Pokemon from './Pokemon'
 
 export default {

@@ -1,21 +1,24 @@
 <template>
-    <div>
-        
-    </div>
+    <li>
+        POKEMON
+    </li>
 </template>
 
 <script>
 import api from '../services/api'
 
 export default {
-    methods: {
-        searchPokedex() {
-            api.getPokedex()
-                .then(response => {
-                    console.log('*** RESULTS ***', response);
-                })
-        }
+    props: {
+        pokemon: Object
     }
+    // methods: {
+    //     searchPokedex() {
+    //         api.getPokedex()
+    //             .then(response => {
+    //                 console.log('*** RESULTS ***', response);
+    //             })
+    //     }
+    // }
 }
 </script>
 
