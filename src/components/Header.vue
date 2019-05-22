@@ -1,5 +1,5 @@
 <template>
-    <h1>HEADER</h1>
+    <h1 id="header">HEADER</h1>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
 </script>
 
 <style>
-#app {
+#header {
     background: white;
     text-align: center;
     border-radius: 5px;

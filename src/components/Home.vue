@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import api from '../services/api.js';
 import Pokedex from './Pokedex';
 import Header from './Header'
 
@@ -15,7 +14,8 @@ export default {
     components: {
         Header,
         Pokedex
-    }
+    },
+    
 }
 </script>
 

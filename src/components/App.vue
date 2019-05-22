@@ -8,14 +8,12 @@
 
 
 export default {
-  components: {
-    
-  }
+  
 }
 </script>
 
 <style>
 body {
-  background: rgba(255, 0, 0, 0.4);
+  background: rgba(2, 82, 18, 0.8);
 }
 </style>

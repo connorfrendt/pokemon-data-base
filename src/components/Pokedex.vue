@@ -1,20 +1,25 @@
 <template>
-    <h1>POKEDEX PAGE</h1>
+    <div>
+        <h1 id='poke-page'>POKEDEX PAGE</h1>
+        <Pokemon />
+    </div>
 </template>
 
 <script>
-import api from '../services/api'
+
+import Pokemon from './Pokemon'
 
 export default {
-    searchPokemon() {
-        api.getPokedex()
-            .then(response => {
-                console.log('*** RESULTS ***', response)
-            })
+    components: {
+        Pokemon
     }
 }
 </script>
 
 <style>
-
+#poke-page {
+    text-align: center;
+    background: white;
+    border-radius: 5px;
+}
 </style>
