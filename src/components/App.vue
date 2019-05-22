@@ -1,16 +1,15 @@
 <template>
   <div id="app">
-      <Header />
       <RouterView></RouterView>
   </div>
 </template>
 
 <script>
-import Header from './Header'
+
 
 export default {
   components: {
-    Header
+    
   }
 }
 </script>

@@ -1,11 +1,23 @@
 <template>
     <div>
-        <h1>Pokémon DataBase</h1>
+        <Header />
+        <h1>Pokémon DataBase HOME</h1>
+        <Pokedex />
     </div>
 </template>
 
-<style>
-body {
-    
+<script>
+import api from '../services/api.js';
+import Pokedex from './Pokedex';
+import Header from './Header'
+
+export default {
+    components: {
+        Header,
+        Pokedex
+    }
 }
-</style>
+</script>
+
+
+<style></style>
