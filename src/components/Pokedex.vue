@@ -2,21 +2,24 @@
     <div>
         <h1 id='poke-page'>POKEDEX PAGE</h1>
         <ul>
-            <Pokemon 
-
-            />
+            <Pokemon v-for="pokemon in pokemons"
+                v-bind:key="pokemon.pokemon"
+                v-bind:pokemon="pokemon" />
         </ul>
     </div>
 </template>
 
 <script>
-import Pokemon from './Pokemon'
+import Pokemon from './Pokemon.vue'
 
 export default {
+    props: {
+        pokemons: Array
+    },
     components: {
         Pokemon
     }
-}
+};
 </script>
 
 <style>
