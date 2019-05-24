@@ -1,6 +1,7 @@
 <template>
     <li>
         <h3>{{pokemon.pokemon}}</h3>
+        <img v-bind:src="pokemon.url_image" />
     </li>
 </template>
 
@@ -14,5 +15,7 @@ export default {
 </script>
 
 <style>
-
+    img {
+        height: 100px;
+    }
 </style>
